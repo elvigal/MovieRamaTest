@@ -1,0 +1,47 @@
+
+// Defines the layout of the system
+name = "Layout"
+description = "Basic MovieRama layout"
+
+// Add session component to the page
+[session]
+security = "all"
+
+==
+
+// Executed in the beginning of the page processing
+function onStart(){
+    $user = Auth::getUser();
+    $this['user'] = ($user) ? $user : '';
+    $this['title'] = 'MovieRama';
+}
+
+==
+
+<html>
+    
+    <head>
+        <!-- Insert head meta data -->
+        {% partial "html_base/meta_head" %}
+    </head>
+
+    <body>
+        <!-- Insert scripts -->
+        {% partial 'html_base/scripts' %}
+        
+        <div class="app-container">
+            
+            <!-- Header -->
+            <div class="app-header">
+                {% partial "sections/header" %}
+            </div>
+
+            <!-- Output page content -->
+            <div class="page-container">
+                {% page %}
+            </div>
+        </div>
+        
+    </body>
+
+</html>

@@ -1,0 +1,11 @@
+1596058069a:1:{s:7:"new.htm";a:9:{s:8:"fileName";s:7:"new.htm";s:7:"content";s:139:"
+// Page template for new movie form 
+title = "New Movie"
+layout = "default"
+url = "/new"
+
+[movies]
+
+==
+
+{% component 'movies' %}";s:5:"mtime";i:1595883958;s:6:"markup";s:24:"{% component 'movies' %}";s:4:"code";N;s:5:"title";s:9:"New Movie";s:6:"layout";s:7:"default";s:3:"url";s:4:"/new";s:6:"movies";a:0:{}}}

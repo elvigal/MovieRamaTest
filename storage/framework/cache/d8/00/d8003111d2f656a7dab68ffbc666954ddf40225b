@@ -1,0 +1,12 @@
+1596058069a:1:{s:21:"html_base/scripts.htm";a:5:{s:8:"fileName";s:21:"html_base/scripts.htm";s:7:"content";s:145:"
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+{% scripts %}
+
+<!-- include ajax framework -->
+{% framework extras %}";s:5:"mtime";i:1596031057;s:6:"markup";s:143:"<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+{% scripts %}
+
+<!-- include ajax framework -->
+{% framework extras %}";s:4:"code";N;}}

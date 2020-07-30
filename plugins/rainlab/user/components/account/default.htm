@@ -1,0 +1,19 @@
+{% if not user %}
+
+    {% if '/signin' in url_current() %}
+        
+        {% partial __SELF__ ~ '::signin' %}
+        
+    {% elseif '/register' in url_current() %}
+        
+        {% partial __SELF__ ~ '::register' %}
+        
+    {% endif %}
+    
+{% elseif '/profile' in url_current() %}
+
+    {% partial __SELF__ ~ '::update' %}
+    
+    
+    
+{% endif %}

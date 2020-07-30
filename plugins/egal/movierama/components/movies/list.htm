@@ -1,0 +1,85 @@
+
+<!-- Display movies submitted to the platform -->
+
+<div class="page-content">
+    
+    <!-- use model movie to display its attributes -->
+    {{ form_ajax('', { model: movie }) }}
+    
+    <div id="movies-list" class="movies-list">
+        
+        {% for movie in movies_ls %}   
+        
+            <div class="movie-container" data-like-num="{{movie.likes}}" data-hate-num="{{movie.hates}}" data-public-date="{{movie.published_at}}">
+                
+                <h2>{{movie.title}}</h2>
+
+                <!-- references user that submitted the movie and links to his movies page -->
+                <div>
+                    <p>Posted by&nbsp; <a href="{{'user_movies'|page({ user_id:movie.user_id }) }}">{{movie.user_name}}</a>&nbsp; {{movie.published_for}} ago</p>
+                </div>
+                
+                <div>
+                    <p>{{movie.summary}}</p>
+                </div>
+                
+                <div>
+                    {% if not user_id or user_id == movie.user_id %}    <!-- user not logged in or movie record belongs to current user  -->                   
+                        <p>{{movie.likes}} likes | {{movie.hates}} hates</p>
+                        
+                    {% else %}
+                    
+                        {% if movie.likes==0 and movie.hates==0 %}      <!-- movie not voted yet -->  
+                            <span>Be the first to vote for this movie: </span>
+                            <button class="link-style" data-request="onVote" data-request-data="{movie_id:{{movie.id}},vote_type:'like'}" type="submit">Like</button>
+                            <button class="link-style" data-request="onVote" data-request-data="{movie_id:{{movie.id}},vote_type:'hate'}" type="submit">Hate</button>
+                        
+                        {% elseif movie.user_voted=='like' %}       <!-- movie liked by the current user -->  
+                            <div class="vote-left">
+                                <span>{{movie.likes}} likes | </span>
+                                <button class="link-style" data-request="onVote" data-request-data="{movie_id:{{movie.id}},vote_type:'hate'}" type="submit">{{movie.hates}} hates</button>
+                            </div>
+                            <div class="vote-right">
+                                <span>You like this movie | </span>
+                                <button class="link-style" data-request="onVote" data-request-data="{movie_id:{{movie.id}},retract:'1'}" type="submit">Unlike</button>
+                            </div>
+                        
+                        {% elseif movie.user_voted=='hate' %}       <!-- movie hated by the current user -->  
+                            <div class="vote-left">
+                                <button class="link-style" data-request="onVote" data-request-data="{movie_id:{{movie.id}},vote_type:'like'}" type="submit">{{movie.likes}} likes</button> | 
+                                <span>{{movie.hates}} hates</span>
+                            </div>
+                            <div class="vote-right">
+                                <span>You hate this movie</span> | 
+                                <button class="link-style" data-request="onVote" data-request-data="{movie_id:{{movie.id}},retract:'1'}" type="submit">Unhate</button>       
+                            </div>
+                            
+                        {% else %}      <!-- movie not voted by the current user -->  
+                            <button class="link-style" data-request="onVote" data-request-data="{movie_id:{{movie.id}},vote_type:'like'}" type="submit">{{movie.likes}} likes</button>
+                            <button class="link-style" data-request="onVote" data-request-data="{movie_id:{{movie.id}},vote_type:'hate'}" type="submit">{{movie.hates}} hates</button>
+                        {% endif %}
+                        
+                    {% endif %}
+                </div>
+                
+            </div>    
+        
+        {% endfor %}  
+
+    </div>
+
+    <!-- menu with new movie and all movies options -->
+    <div class="movies-menu">
+        {% if user %}
+            <a class="movie-button green" href='{{ 'new'|page }}'>New Movie<a/>
+        {% endif %}
+
+        {% if '/user_movies' in url_current() %}
+            <a class="movie-button green" href='{{ 'home'|page }}'>All Movies<a/>
+        {% endif %}
+    </div>
+    
+    {{ form_close() }}
+
+</div>
+

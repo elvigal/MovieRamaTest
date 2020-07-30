@@ -1,0 +1,66 @@
+
+{% if canRegister %}
+   
+    {{ form_ajax('onRegister') }}
+
+    <div class="page-content">
+        <div class="sign-in">
+            <h2>Register</h2>
+
+            <div class="form-group">
+                <label for="registerName">Full Name:</label>
+                <input
+                    name="name"
+                    type="text"
+                    class="form-control"
+                    id="registerName"
+                    placeholder="Enter your full name" />
+            </div>
+
+            <div class="form-group">
+                <label for="registerEmail">Email:</label>
+                <input
+                    name="email"
+                    type="email"
+                    class="form-control"
+                    id="registerEmail"
+                    placeholder="Enter your email" />
+            </div>
+
+            {% if loginAttribute == "username" %}
+                <div class="form-group">
+                    <label for="registerUsername">Username</label>
+                    <input
+                        name="username"
+                        type="text"
+                        class="form-control"
+                        id="registerUsername"
+                        placeholder="Enter your username" />
+                </div>
+            {% endif %}
+
+            <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <input
+                    name="password"
+                    type="password"
+                    class="form-control"
+                    id="registerPassword"
+                    placeholder="Choose a password" />
+            </div>
+
+            <div class='user-buttons'>
+                <button type="submit" class="btn btn-default movie-button blue">Register</button>
+            </div>   
+        
+        </div>
+        
+        <div class="movies-menu">
+            <a class="movie-button green" href='{{ 'home'|page }}'>All Movies<a/>
+        </div>
+    </div>
+    
+    {{ form_close() }}
+{% else %}
+    <!-- Registration is disabled. -->
+{% endif %}

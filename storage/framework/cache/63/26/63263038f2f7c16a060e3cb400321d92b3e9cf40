@@ -1,0 +1,13 @@
+1596058069a:1:{s:10:"signin.htm";a:9:{s:8:"fileName";s:10:"signin.htm";s:7:"content";s:178:"
+// Page template for sign in form
+title = "Sign in"
+layout = "default"
+url = "/signin"
+
+[account]
+redirect = "home"
+paramCode = "code"
+==
+
+{% component 'account' %}
+";s:5:"mtime";i:1595883987;s:6:"markup";s:25:"{% component 'account' %}";s:4:"code";N;s:5:"title";s:7:"Sign in";s:6:"layout";s:7:"default";s:3:"url";s:7:"/signin";s:7:"account";a:2:{s:8:"redirect";s:4:"home";s:9:"paramCode";s:4:"code";}}}

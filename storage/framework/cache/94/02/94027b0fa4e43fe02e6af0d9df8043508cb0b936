@@ -1,0 +1,28 @@
+1596058069a:1:{s:19:"sections/header.htm";a:5:{s:8:"fileName";s:19:"sections/header.htm";s:7:"content";s:539:"
+<!-- application title -->
+<div class="title-div">
+    <h1>{{ title }}</h1>
+</div>
+
+<!-- links for logging in or signing up -->
+<div class="user-menu">
+    {% if user %}
+        <p>Welcome back &nbsp;&nbsp; <a href="{{'profile'|page}}">{{ user_name }}</a></p>
+        <p class='logout-div'>(or <a href="#" data-request="onLogout">Log out</a>)</p>
+    {% else %}
+        <p><a href="{{'signin'|page}}">Log in</a> &nbsp; or &nbsp; <a class="movie-button blue" href="{{'register'|page}}">Sign up</a></p> 
+    {% endif %}
+</div>";s:5:"mtime";i:1596031140;s:6:"markup";s:537:"<!-- application title -->
+<div class="title-div">
+    <h1>{{ title }}</h1>
+</div>
+
+<!-- links for logging in or signing up -->
+<div class="user-menu">
+    {% if user %}
+        <p>Welcome back &nbsp;&nbsp; <a href="{{'profile'|page}}">{{ user_name }}</a></p>
+        <p class='logout-div'>(or <a href="#" data-request="onLogout">Log out</a>)</p>
+    {% else %}
+        <p><a href="{{'signin'|page}}">Log in</a> &nbsp; or &nbsp; <a class="movie-button blue" href="{{'register'|page}}">Sign up</a></p> 
+    {% endif %}
+</div>";s:4:"code";N;}}

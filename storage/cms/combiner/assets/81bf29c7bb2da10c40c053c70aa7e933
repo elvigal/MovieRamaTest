@@ -1,0 +1,14 @@
+
+h1, h3, p, a {
+    font-family: cursive;
+}
+
+.app-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.app-header,
+.page-container {
+    width: 100%;
+}

@@ -1,0 +1,23 @@
+
+
+<!-- Submit new movie -->
+{% if '/new' in url_current() %}
+
+    {% partial __SELF__ ~ '::new' %}
+
+<!-- Display movies submitted by a specific user -->
+{% elseif '/user_movies' in url_current() %}
+
+    {% partial __SELF__ ~ '::filters' %}
+    
+    {% partial __SELF__ ~ '::list' movies_ls=user_movies %}
+    
+<!-- Display all submitted movies -->
+{% else %}
+
+    {% partial __SELF__ ~ '::filters' %}
+    
+    {% partial __SELF__ ~ '::list' movies_ls=movies %}
+    
+{% endif %}
+

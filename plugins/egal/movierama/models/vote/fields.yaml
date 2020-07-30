@@ -1,0 +1,21 @@
+
+# ===================================
+#  Fields Definitions
+# ===================================
+
+fields:
+    vote_id:
+        label: Vote Id
+        
+    movie_id:
+        label: Movie Id
+
+    user_id:
+        label: User Id
+
+    vote_type:
+        label: Like or Hate
+        
+    voted_at:
+        label: Voted data
+        

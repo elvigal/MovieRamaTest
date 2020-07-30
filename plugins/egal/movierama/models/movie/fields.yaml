@@ -1,0 +1,20 @@
+
+# ===================================
+#  Fields Definitions
+# ===================================
+
+fields:
+    id:
+        label: Movie Id
+
+    title:
+        label: Movie title
+
+    summary:
+        label: Movie description
+        
+    user_id:
+        label: User Id
+        
+    published_at:
+        label: Publication date

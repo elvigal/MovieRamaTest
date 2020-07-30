@@ -1,0 +1,11 @@
+1596058069a:1:{s:15:"user_movies.htm";a:9:{s:8:"fileName";s:15:"user_movies.htm";s:7:"content";s:162:"
+// Page template for user movies page
+title = "Movies by user"
+layout = "default"
+url = "/user_movies/:user_id"
+
+[movies]
+
+==
+
+{% component 'movies' %}";s:5:"mtime";i:1595883994;s:6:"markup";s:24:"{% component 'movies' %}";s:4:"code";N;s:5:"title";s:14:"Movies by user";s:6:"layout";s:7:"default";s:3:"url";s:21:"/user_movies/:user_id";s:6:"movies";a:0:{}}}

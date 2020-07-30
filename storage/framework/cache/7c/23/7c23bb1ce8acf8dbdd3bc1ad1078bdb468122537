@@ -1,0 +1,25 @@
+1596058069a:1:{s:23:"html_base/meta_head.htm";a:5:{s:8:"fileName";s:23:"html_base/meta_head.htm";s:7:"content";s:417:"<head>
+    <meta charset="utf-8">
+    
+    <title>{{ this.page.title }}</title>
+    
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link href="{{ ['assets/css/layout.css']|theme }}" rel="stylesheet">
+    
+    {% styles %}
+</head>";s:5:"mtime";i:1596030872;s:6:"markup";s:417:"<head>
+    <meta charset="utf-8">
+    
+    <title>{{ this.page.title }}</title>
+    
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link href="{{ ['assets/css/layout.css']|theme }}" rel="stylesheet">
+    
+    {% styles %}
+</head>";s:4:"code";N;}}

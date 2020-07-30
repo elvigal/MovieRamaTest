@@ -1,0 +1,35 @@
+
+<!-- The form to submit a new movie -->
+
+<div class="page-content">
+    
+    {{ form_ajax('', { model: movie }) }}
+    
+        <div id="new-movie" class="new-movie">
+            
+            <h2>New Movie</h2>
+
+            <div>
+                <input type='text' name='movie_title' placeholder='Enter title for the movie' required/>
+            </div>
+
+            <div>
+                <textarea rows="6" name="movie_summary" placeholder='Enter description for the movie'></textarea>
+            </div> 
+
+            <!-- submit new movie or cancel action -->
+            <div class='movie-buttons'>
+                <a href='{{ 'home'|page }}' onclick="return confirmCancel();">Cancel</a>
+                    <span> &nbsp; &nbsp; </span>
+                <button class="movie-button blue" data-request="onAddMovie" type='submit'>Submit +</button>                
+            </div> 
+        
+        </div>
+    
+    {{ form_close() }}
+    
+    <div class="movies-menu">
+        <a class="movie-button green" href='{{ 'home'|page }}'>All Movies<a/>
+    </div>
+</div>
+

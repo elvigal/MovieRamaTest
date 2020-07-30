@@ -1,0 +1,9 @@
+
+.app-container {
+    width: 1200px;
+}
+
+.app-header,
+.page-container {
+    width: 100%;
+}

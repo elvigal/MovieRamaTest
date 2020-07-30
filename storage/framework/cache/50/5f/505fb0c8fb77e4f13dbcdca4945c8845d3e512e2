@@ -1,0 +1,12 @@
+1595849005a:1:{s:11:"account.htm";a:9:{s:8:"fileName";s:11:"account.htm";s:7:"content";s:151:"title = "Account"
+
+layout = "default"
+url = "/account/:code?"
+
+[account]
+redirect = "home"
+paramCode = "code"
+==
+
+{% component 'account' %}
+";s:5:"mtime";i:1595848393;s:6:"markup";s:25:"{% component 'account' %}";s:4:"code";N;s:5:"title";s:7:"Account";s:6:"layout";s:7:"default";s:3:"url";s:15:"/account/:code?";s:7:"account";a:2:{s:8:"redirect";s:4:"home";s:9:"paramCode";s:4:"code";}}}

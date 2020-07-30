@@ -1,0 +1,85 @@
+
+/* Customize plugin screens */
+.new-movie {
+    border: 2px solid #625f5f;
+}
+
+.new-movie > div {
+    margin: 14px;
+}
+
+.new-movie input,
+.new-movie textarea {
+    width: 70%;
+}
+
+.sorting-filters {
+    background: #EBEBEB;
+    padding: 0 14px;
+    border: 2px solid #2b2929;
+    margin-bottom: 14px;
+}
+
+.sorting-filters p {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.sorting-filters div {
+    display: inline-block;
+    margin-left: 14px;
+}
+
+.movies-list > div {
+    padding: 0 14px;
+    border: 2px solid #2b2929;
+    margin: 15px 0;
+}
+
+.movies-list > div h2 {
+    font-size: 31px;
+    font-family: cursive;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin: 10px 0;
+    padding: 0;
+}
+
+
+.movies-list .link-style {
+    color: #0067EC;
+    text-decoration: underline;
+    font-family: cursive;
+    background: none;
+    box-shadow: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer
+}
+
+.movie-buttons {
+    right: 30%;
+    position: relative;
+    float: right;
+}
+
+.movie-buttons button {
+    background: #959595;
+    border-color: #595959;
+}
+
+
+.movie-container > div:last-child {
+    display: flow-root;
+    margin-bottom: 20px
+}
+
+.movie-container > div .vote-left {
+    position: relative;
+    float: left
+}
+
+.movie-container > div .vote-right {
+    position: relative;
+    float: right
+}

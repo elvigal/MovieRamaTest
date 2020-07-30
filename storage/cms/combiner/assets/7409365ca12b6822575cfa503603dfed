@@ -1,0 +1,30 @@
+
+h1, h3, p, a {
+    font-family: cursive;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.app-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.app-header,
+.page-container {
+    width: 100%;
+}
+
+.app-header {
+    padding: 14px 0;
+}
+
+.title-div {
+    float: left
+}
+
+.app-menu {
+    float: right
+}

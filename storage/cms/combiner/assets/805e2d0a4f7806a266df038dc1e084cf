@@ -1,0 +1,124 @@
+
+h1, h3, p, a {
+    font-family: cursive;
+    font-size: 17px;
+    color: #030303;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 42px
+}
+
+h2 {
+    font-family: cursive;
+    padding: 0 22px;
+    color: #71BB51;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.app-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.app-header,
+.page-container {
+    width: 100%;
+    clear: both;
+}
+
+.app-header {
+    display: block;
+    height: 90px;
+}
+
+.title-div {
+    float: left
+}
+
+.user-menu {
+    float: right
+}
+
+.user-menu {
+    padding: 14px 10px !important;
+}
+
+a {
+    color: #0067EC;
+    text-decoration: underline
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    height: 28px;
+    padding: 4px 7px;
+    border: 1px solid #b3b3b3;
+    letter-spacing: 1px !important;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: verdana;
+    border-radius: 5px;
+    font-size: 12px;;
+}
+
+textarea {
+    padding: 6px 6px;
+    border: 1px solid #c9c8c8;
+    resize: none;
+    overflow-y: scroll;
+    font-weight: normal;
+    border-color: #b3b3b3 !important;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: verdana;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.button-green {
+    background: #71BB51;
+    border: 2px #485F3B solid;
+    border-radius: 24px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 9px 50px;
+    letter-spacing: 2px;
+}
+
+.button-blue {
+    background: #1563F4;
+    border: 2px #063C9C solid;
+    border-radius: 24px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 2px 21px;
+    letter-spacing: 2px;
+    font-family: cursive;
+}
+
+.sign-in input,
+.sign-in textarea {
+    width: 70%;
+}
+
+.movies-list,
+.new-movie,
+.sign-in {
+    width: 70%;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.sign-in > div {
+    margin: 14px;
+}
+
+.sign-in {
+    border: 2px solid #625f5f;
+}

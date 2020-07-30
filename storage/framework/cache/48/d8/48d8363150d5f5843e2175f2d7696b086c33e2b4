@@ -1,0 +1,12 @@
+1596058069a:1:{s:8:"home.htm";a:9:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:168:"
+// Page template for home page
+title = "MovieRama"
+layout = "default"
+url = "/"
+
+// add component movies to home page
+[movies]
+
+==
+
+{% component 'movies' %}";s:5:"mtime";i:1595883945;s:6:"markup";s:24:"{% component 'movies' %}";s:4:"code";N;s:5:"title";s:9:"MovieRama";s:6:"layout";s:7:"default";s:3:"url";s:1:"/";s:6:"movies";a:0:{}}}
